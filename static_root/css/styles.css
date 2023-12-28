@@ -72,31 +72,8 @@
   }
 
   .sticky-line {
-    position: fixed;
-    bottom: 0;
-    left: 2;
-    width: 5px;
-    background-color: #fff; /* Set background color to match your page background */
-    z-index: 1000;
+    color: yellow;
+    font-size: 40px;
 }
-
-.social-icons-container {
-    display: flex;
-    flex-direction: column; /* Display icons in a vertical column */
-    width: 5px;
-}
-
-.social-icons-container a {
-    color: #333; /* Set the color of the icons */
-    font-size: 20px; /* Adjust the font size of the icons as needed */
-    text-decoration: none;
-}
-
-.line {
-  width: 1px;
-  height: 130px;
-  background-color: #000; /* Set the color of the line */
-}
-
 
 
