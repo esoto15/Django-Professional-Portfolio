@@ -29,3 +29,5 @@ Take advantage of Microsoft Azure for deploying your portfolio. Ensure a reliabl
 3. Deploy on Azure for a professional and reliable hosting solution.
 
 Create an impactful online presence with this Django-based professional portfolio template. Let your skills and experiences shine through a beautifully designed website.
+## How to run
+python manage.py runserver
