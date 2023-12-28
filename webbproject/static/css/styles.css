@@ -70,3 +70,13 @@
   .project-image-container:hover .social-icons a {
     color: #00bcd4; /* Change color on hover */
   }
+
+.sticky-line {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 12px; /* Adjust the width of the line as needed */
+    height: 500px;
+    background-color: #333; /* Adjust the color of the line as needed */
+}
