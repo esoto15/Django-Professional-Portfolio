@@ -45,7 +45,7 @@
         <!-- Page Content-->
         <div class="sticky-line">
             <div class="social-icons-container">
-                <a href="https://www.linkedin.com/in/elizabeth-soto-63645618a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/elizabethsoto24" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/esoto15" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="" ><i class="fa-regular fa-paper-plane" style="color: #000000;"></i></a>
                 <!-- Add your email link here -->
@@ -72,7 +72,6 @@
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
             <!-- Experience -->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
@@ -92,7 +91,6 @@
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
             <!-- Education -->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
@@ -111,14 +109,29 @@
                     {% endfor %}
                 </div>
             </section>
-            <hr class="m-0" />
+            <!-- Skills-->
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Languages and Tools</h2>
+                    <!-- Group languages by category -->
+                    {% regroup languages.all by category as grouped_languages %}
+                    <!-- Display languages in a table -->
+                    <table id="languageTable">
+                        <tbody>
+                            {% for category_group in grouped_languages %}
+                                <tr>
+                                    {% for language in category_group.list %}
+                                        <td>
+                                            <img src="{{ language.logo.url }}" alt="{{ language.name }} Logo" style="width:100px;height:100px;">
+                                        </td>
+                                    {% endfor %}
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
                 </div>
             </section>
-            <hr class="m-0" />
             <!--Projects-->
             <section class="resume-section" id="projects"> 
                 <div class="resume-section-content">

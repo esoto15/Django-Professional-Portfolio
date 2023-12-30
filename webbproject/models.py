@@ -34,6 +34,18 @@ class projects(models.Model):
     def get_absolute_url(self):
         return reverse('project_detail', args=[str(self.id)])
 
+class Language(models.Model):
+    # Name of the language, e.g., English, Spanish, etc.
+    name = models.CharField(max_length=100)
+
+    # Category of the language, e.g., Programming, Natural, etc.
+    category = models.CharField(max_length=100)
+
+    # Image field to store the logo image
+    logo = models.ImageField(upload_to='language_logos/', null=True, blank=True)
+
+    def __str__(self):
+        return self.name
     
  
 #  Instructions for running the server
