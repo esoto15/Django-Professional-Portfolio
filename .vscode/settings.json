@@ -1,5 +1,7 @@
 {
     "python.analysis.extraPaths": [
         "./webbproject"
-    ]
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/df2ef697-9448-40f7-830e-4d71dec1ce0a/resourceGroups/django-portfolio/providers/Microsoft.Web/sites/django-web-app-port",
+    "appService.deploySubpath": "."
 }

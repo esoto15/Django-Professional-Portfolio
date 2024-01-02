@@ -124,3 +124,8 @@
   height: 50px;
   object-fit: cover; /* Ensure the image covers the container */
 }
+#scene-container {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
