@@ -12,3 +12,19 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  var stickyLine = document.getElementById("sticky-line");
+
+  window.addEventListener("scroll", function () {
+      var scrollPosition = window.scrollY;
+
+      if (scrollPosition >= 0) {
+          stickyLine.style.display = "block";
+          stickyLine.style.top = scrollPosition + "px";
+      } else {
+          stickyLine.style.display = "none";
+      }
+  });
+});

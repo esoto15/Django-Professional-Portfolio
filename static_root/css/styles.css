@@ -1,79 +1,131 @@
 #navbarResponsive {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #navbarResponsive ul.navbar-nav {
-    text-align: center;
+  text-align: center;
 }
 
 #navbarResponsive ul.navbar-nav li {
-    display: inline-block;
-    margin-right: 15px; /* Adjust this value as needed */
+  display: inline-block;
+  margin-right: 15px; /* Adjust this value as needed */
 }
 
 #navbarResponsive ul.navbar-nav li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .project-image-container {
-    position: relative;
-    width: 50%;
-    height: 50%; /* Maintain a square aspect ratio */
-    overflow: hidden;
-  }
-  
-  .project-image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the image covers the container */
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0; /* Initially hidden */
-    background: rgba(0, 0, 0, 0.7); /* Dark overlay color */
-    transition: opacity 0.3s ease;
-  }
-  
-  .project-info {
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .social-icons a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    transition: color 0.3s ease;
-  }
-  
-  .project-image-container:hover .overlay {
-    opacity: 1; /* Reveal the overlay on hover */
-  }
-  
-  .project-image-container:hover .social-icons a {
-    color: #00bcd4; /* Change color on hover */
-  }
-
-  .sticky-line {
-    color: yellow;
-    font-size: 40px;
+  position: relative;
+  width: 50%;
+  height: 50%; /* Maintain a square aspect ratio */
+  overflow: hidden;
 }
 
+.project-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container */
+}
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay color */
+  transition: opacity 0.3s ease;
+}
+
+.project-info {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.project-image-container:hover .overlay {
+  opacity: 1; /* Reveal the overlay on hover */
+}
+
+.project-image-container:hover .social-icons a {
+  color: #00bcd4; /* Change color on hover */
+}
+
+.sticky-line {
+  position: fixed;
+  bottom: 0;
+  left: 100px; /* Adjusted with 'px' */
+  width: 5px;
+  background-color: #fff; /* Set background color to match your page background */
+  z-index: 1000;
+}
+
+.sticky-line-two {
+  position: fixed;
+  bottom: 0;
+  right: 50px; /* Adjusted to be on the right */
+  background-color: #fff; /* Set background color to match your page background */
+  z-index: 1000;
+  padding-left:5px;
+}
+
+.social-icons-container {
+  display: flex;
+  flex-direction: column; /* Display icons in a vertical column */
+  width: 5px;
+}
+
+.social-icons-container a {
+  color: #333; /* Set the color of the icons */
+  font-size: 20px; /* Adjust the font size of the icons as needed */
+  text-decoration: none;
+}
+
+.line {
+  width: 1px;
+  height: 130px;
+  background-color: #000; /* Set the color of the line */
+}
+
+.line-two{
+  width: 1px;
+  height: 130px;
+  background-color: #000; /* Set the color of the line */
+}
+.email-container {
+  transform: rotate(-90deg); /* You can adjust the degree value as needed */
+  transform-origin: left bottom; /* Adjust the origin of the rotation if needed */
+  white-space: nowrap; /* Prevent text from wrapping */
+  color:#333;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+#scene-container {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
